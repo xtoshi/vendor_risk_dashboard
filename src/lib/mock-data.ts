@@ -1,0 +1,182 @@
+import type { Vendor, VendorSummary } from '@/types/vendor';
+
+export const mockVendors: Vendor[] = [
+  {
+    id: '1',
+    name: 'CloudSecure Inc.',
+    serviceType: 'Cloud Infrastructure',
+    securityScore: 92,
+    complianceCertifications: ['SOC2', 'ISO27001', 'GDPR'],
+    riskLevel: 'Low',
+    lastAssessmentDate: '2025-11-15',
+    nextAssessmentDate: '2026-05-15',
+    assessmentStatus: 'Completed',
+    contactEmail: 'security@cloudsecure.io',
+    contractEndDate: '2027-01-01',
+    createdAt: '2024-01-15T10:00:00Z',
+    updatedAt: '2025-11-15T14:30:00Z',
+  },
+  {
+    id: '2',
+    name: 'DataFlow Systems',
+    serviceType: 'Data Analytics',
+    securityScore: 78,
+    complianceCertifications: ['SOC2', 'GDPR'],
+    riskLevel: 'Medium',
+    lastAssessmentDate: '2025-08-20',
+    nextAssessmentDate: '2026-02-20',
+    assessmentStatus: 'Pending',
+    contactEmail: 'compliance@dataflow.com',
+    contractEndDate: '2026-06-30',
+    createdAt: '2024-03-10T09:00:00Z',
+    updatedAt: '2025-08-20T11:00:00Z',
+  },
+  {
+    id: '3',
+    name: 'PaymentPro Solutions',
+    serviceType: 'Payment Processing',
+    securityScore: 88,
+    complianceCertifications: ['SOC2', 'ISO27001', 'PCI-DSS'],
+    riskLevel: 'Low',
+    lastAssessmentDate: '2025-10-01',
+    nextAssessmentDate: '2026-04-01',
+    assessmentStatus: 'Completed',
+    contactEmail: 'security@paymentpro.com',
+    contractEndDate: '2026-12-31',
+    createdAt: '2024-02-20T08:00:00Z',
+    updatedAt: '2025-10-01T16:00:00Z',
+  },
+  {
+    id: '4',
+    name: 'TechVendor Corp',
+    serviceType: 'IT Support',
+    securityScore: 45,
+    complianceCertifications: [],
+    riskLevel: 'High',
+    lastAssessmentDate: '2024-06-15',
+    nextAssessmentDate: '2025-12-15',
+    assessmentStatus: 'Overdue',
+    contactEmail: 'admin@techvendor.net',
+    contractEndDate: '2026-03-31',
+    createdAt: '2023-06-01T10:00:00Z',
+    updatedAt: '2024-06-15T09:00:00Z',
+  },
+  {
+    id: '5',
+    name: 'SecureHost Ltd',
+    serviceType: 'Web Hosting',
+    securityScore: 82,
+    complianceCertifications: ['ISO27001', 'GDPR'],
+    riskLevel: 'Medium',
+    lastAssessmentDate: '2025-09-10',
+    nextAssessmentDate: '2026-03-10',
+    assessmentStatus: 'Completed',
+    contactEmail: 'security@securehost.io',
+    contractEndDate: '2026-09-30',
+    createdAt: '2024-04-15T11:00:00Z',
+    updatedAt: '2025-09-10T13:00:00Z',
+  },
+  {
+    id: '6',
+    name: 'API Gateway Pro',
+    serviceType: 'API Management',
+    securityScore: 71,
+    complianceCertifications: ['SOC2'],
+    riskLevel: 'Medium',
+    lastAssessmentDate: '2025-07-22',
+    nextAssessmentDate: '2026-01-22',
+    assessmentStatus: 'Pending',
+    contactEmail: 'compliance@apigateway.com',
+    contractEndDate: '2026-08-15',
+    createdAt: '2024-05-20T14:00:00Z',
+    updatedAt: '2025-07-22T10:00:00Z',
+  },
+  {
+    id: '7',
+    name: 'LegacySoft Inc',
+    serviceType: 'Legacy Systems',
+    securityScore: 38,
+    complianceCertifications: [],
+    riskLevel: 'High',
+    lastAssessmentDate: null,
+    nextAssessmentDate: '2026-01-15',
+    assessmentStatus: 'Pending',
+    contactEmail: 'support@legacysoft.com',
+    contractEndDate: '2026-02-28',
+    createdAt: '2022-01-10T09:00:00Z',
+    updatedAt: '2025-06-01T08:00:00Z',
+  },
+  {
+    id: '8',
+    name: 'CloudDB Services',
+    serviceType: 'Database Management',
+    securityScore: 85,
+    complianceCertifications: ['SOC2', 'ISO27001', 'HIPAA'],
+    riskLevel: 'Low',
+    lastAssessmentDate: '2025-12-01',
+    nextAssessmentDate: '2026-06-01',
+    assessmentStatus: 'Completed',
+    contactEmail: 'security@clouddb.io',
+    contractEndDate: '2027-03-31',
+    createdAt: '2024-06-15T10:00:00Z',
+    updatedAt: '2025-12-01T15:00:00Z',
+  },
+  {
+    id: '9',
+    name: 'QuickDeploy',
+    serviceType: 'CI/CD Platform',
+    securityScore: 55,
+    complianceCertifications: ['SOC2'],
+    riskLevel: 'High',
+    lastAssessmentDate: '2025-03-15',
+    nextAssessmentDate: '2025-09-15',
+    assessmentStatus: 'Overdue',
+    contactEmail: 'admin@quickdeploy.io',
+    contractEndDate: '2026-05-31',
+    createdAt: '2024-07-20T11:00:00Z',
+    updatedAt: '2025-03-15T14:00:00Z',
+  },
+  {
+    id: '10',
+    name: 'EnterpriseCRM',
+    serviceType: 'Customer Management',
+    securityScore: 90,
+    complianceCertifications: ['SOC2', 'ISO27001', 'GDPR', 'HIPAA'],
+    riskLevel: 'Low',
+    lastAssessmentDate: '2025-11-20',
+    nextAssessmentDate: '2026-05-20',
+    assessmentStatus: 'Completed',
+    contactEmail: 'security@enterprisecrm.com',
+    contractEndDate: '2027-06-30',
+    createdAt: '2024-08-01T09:00:00Z',
+    updatedAt: '2025-11-20T12:00:00Z',
+  },
+];
+
+export function getMockVendorSummary(): VendorSummary {
+  const highRiskCount = mockVendors.filter((v) => v.riskLevel === 'High').length;
+  const mediumRiskCount = mockVendors.filter((v) => v.riskLevel === 'Medium').length;
+  const lowRiskCount = mockVendors.filter((v) => v.riskLevel === 'Low').length;
+  const pendingAssessments = mockVendors.filter(
+    (v) => v.assessmentStatus === 'Pending'
+  ).length;
+  const overdueAssessments = mockVendors.filter(
+    (v) => v.assessmentStatus === 'Overdue'
+  ).length;
+  const averageSecurityScore =
+    mockVendors.reduce((sum, v) => sum + v.securityScore, 0) / mockVendors.length;
+
+  return {
+    totalVendors: mockVendors.length,
+    highRiskCount,
+    mediumRiskCount,
+    lowRiskCount,
+    pendingAssessments,
+    overdueAssessments,
+    averageSecurityScore: Math.round(averageSecurityScore * 10) / 10,
+  };
+}
+
+export function getMockVendorById(id: string): Vendor | undefined {
+  return mockVendors.find((v) => v.id === id);
+}
