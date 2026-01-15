@@ -36,7 +36,7 @@ This link was generated directly from the publish flow and is ready for review a
 A fast-forward timelapse of the complete workflow (prompt → production) is available here:
 
 👉 **Timelapse video:**  
-*(Add your uploaded video link here)*
+https://github.com/user-attachments/assets/2b5c9808-77a7-4858-9fe1-6458b67b898f
 
 The video shows the full flow:
 Claude Code → GitHub → Replit → Live Production URL
