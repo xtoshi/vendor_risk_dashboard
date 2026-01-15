@@ -91,26 +91,10 @@ Making it a strong example of **why a production environment matters**, not just
 
 ---
 
-## 🧠 One-Shot Prompt Used (Claude Code)
 
-The following prompt was used to scaffold the project locally.
 
-```text
-Act as a Senior Full Stack Engineer. Build a secure Vendor Risk Assessment Dashboard using Next.js (App Router), Tailwind CSS, and Shadcn UI components.
 
-Core Features:
-- Dashboard Home: Summary of total vendors, risk levels (High, Medium, Low), pending assessments
-- Vendor List: Table showing Vendor Name, Service Type, Security Score (0–100), Compliance Status (SOC2, ISO27001)
-- Risk Calculation Logic: Mock function calculating risk based on missing certifications
-- Secure Architecture: Prepare for PostgreSQL using environment variables (DATABASE_URL)
-- UI/UX: Clean, corporate interface, dark mode by default, lucide-react icons
-
-Technical Constraints:
-- Initialize as a git repository immediately
-- Modular components only
-- Create a .env.example file
-- Do not start a local server; scaffold and install dependencies only
-🧱 Workflow Breakdown
+**##🧱 Workflow Breakdown**
 1. Architecture & Logic (Local)
 
 UI structure
@@ -161,18 +145,18 @@ This is a demonstration project, but the patterns are suitable for internal tool
 
 You can reproduce the shipping phase here:
 
-👉 Replit referral link:
+###👉 Replit referral link:
 https://replit.com/refer/ballyK
 
 🛠 Local Development (Optional)
 npm install
 npm run dev
-
+---
 
 Open:
 http://localhost:3000
-
-📌 Why This Exists
+---
+###📌 Why This Exists
 
 AI-assisted coding is accelerating — but the last mile still breaks most workflows:
 
@@ -184,19 +168,27 @@ This repository shows one clean path from intent to production.
 
 MIT
 
+---
+## 🧠 One-Shot Prompt Used (Claude Code)
+
+The following prompt was used to scaffold the project locally.
+
+```text
+Act as a Senior Full Stack Engineer. Build a secure Vendor Risk Assessment Dashboard using Next.js (App Router), Tailwind CSS, and Shadcn UI components.
+
+Core Features:
+- Dashboard Home: Summary of total vendors, risk levels (High, Medium, Low), pending assessments
+- Vendor List: Table showing Vendor Name, Service Type, Security Score (0–100), Compliance Status (SOC2, ISO27001)
+- Risk Calculation Logic: Mock function calculating risk based on missing certifications
+- Secure Architecture: Prepare for PostgreSQL using environment variables (DATABASE_URL)
+- UI/UX: Clean, corporate interface, dark mode by default, lucide-react icons
+
+Technical Constraints:
+- Initialize as a git repository immediately
+- Modular components only
+- Create a .env.example file
+- Do not start a local server; scaffold and install dependencies only
+
+
 
 ---
-
-### ✅ This version is:
-- One file  
-- Clean Markdown  
-- Campaign-safe  
-- Repo-ready  
-- Reviewer-friendly  
-
-If you want next, I can:
-- Add badges
-- Add an architecture diagram
-- Shorten for a public-facing repo
-
-Just tell me.
